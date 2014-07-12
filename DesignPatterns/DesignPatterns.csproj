@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8705DC4D-11BB-4D6C-9C2F-223DB3248B4E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DesignPatterns</RootNamespace>
+    <AssemblyName>DesignPatterns</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BehavioralPatterns\ChainOfResponsibility\SampleCode\Application.cs" />
+    <Compile Include="BehavioralPatterns\ChainOfResponsibility\SampleCode\Button.cs" />
+    <Compile Include="BehavioralPatterns\ChainOfResponsibility\SampleCode\Dialog.cs" />
+    <Compile Include="BehavioralPatterns\ChainOfResponsibility\SampleCode\HelpHandler.cs" />
+    <Compile Include="BehavioralPatterns\ChainOfResponsibility\SampleCode\HelpTopic.cs" />
+    <Compile Include="BehavioralPatterns\ChainOfResponsibility\SampleCode\Widget.cs" />
+    <Compile Include="BehavioralPatterns\ChainOfResponsibility\Structure\Client.cs" />
+    <Compile Include="BehavioralPatterns\ChainOfResponsibility\Structure\ConcreteHandler1.cs" />
+    <Compile Include="BehavioralPatterns\ChainOfResponsibility\Structure\ConcreteHandler2.cs" />
+    <Compile Include="BehavioralPatterns\ChainOfResponsibility\Structure\Handler.cs" />
+    <Compile Include="BehavioralPatterns\Observer\SampleCode\AnalogClock.cs" />
+    <Compile Include="BehavioralPatterns\Observer\SampleCode\AnalogDisplayer.cs" />
+    <Compile Include="BehavioralPatterns\Observer\SampleCode\ClockBase.cs" />
+    <Compile Include="BehavioralPatterns\Observer\SampleCode\ClockTimer.cs" />
+    <Compile Include="BehavioralPatterns\Observer\SampleCode\DigitalClock.cs" />
+    <Compile Include="BehavioralPatterns\Observer\SampleCode\DigitalDisplayer.cs" />
+    <Compile Include="BehavioralPatterns\Observer\SampleCode\IObserver.cs" />
+    <Compile Include="BehavioralPatterns\Observer\SampleCode\ITimeDisplayer.cs" />
+    <Compile Include="BehavioralPatterns\Observer\SampleCode\Subject.cs" />
+    <Compile Include="BehavioralPatterns\Observer\SampleCode\Time.cs" />
+    <Compile Include="BehavioralPatterns\Strategy\Structure\Client.cs" />
+    <Compile Include="BehavioralPatterns\Strategy\Structure\ConcreteStrategy1.cs" />
+    <Compile Include="BehavioralPatterns\Strategy\Structure\ConcreteStrategy2.cs" />
+    <Compile Include="BehavioralPatterns\Strategy\Structure\ConcreteStrategy3.cs" />
+    <Compile Include="BehavioralPatterns\Strategy\Structure\Context.cs" />
+    <Compile Include="BehavioralPatterns\Strategy\Structure\IStrategy.cs" />
+    <Compile Include="BehavioralPatterns\TemplateMethod\Structure\AbstractClass.cs" />
+    <Compile Include="BehavioralPatterns\TemplateMethod\Structure\ConcreteClass.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Structure\AbstractFactory.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Structure\Client.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Structure\ConcreteFactory1.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Structure\ConcreteFactory2.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Structure\ProductA.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Structure\ProductA1.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Structure\ProductA2.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Structure\ProductB.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Structure\ProductB1.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Structure\ProductB2.cs" />
+    <Compile Include="StructuralPatterns\Bridge\ApplicationWindow.cs" />
+    <Compile Include="StructuralPatterns\Bridge\Coord.cs" />
+    <Compile Include="StructuralPatterns\Bridge\IconWindow.cs" />
+    <Compile Include="StructuralPatterns\Bridge\Point.cs" />
+    <Compile Include="StructuralPatterns\Bridge\TransientWindow.cs" />
+    <Compile Include="StructuralPatterns\Bridge\Window.cs" />
+    <Compile Include="StructuralPatterns\Bridge\WindowImpl.cs" />
+    <Compile Include="StructuralPatterns\Bridge\XWindowImpl.cs" />
+    <Compile Include="StructuralPatterns\Composite\Structure\Client.cs" />
+    <Compile Include="StructuralPatterns\Composite\Structure\Component.cs" />
+    <Compile Include="StructuralPatterns\Composite\Structure\Composite.cs" />
+    <Compile Include="StructuralPatterns\Composite\Structure\Leaf.cs" />
+    <Compile Include="StructuralPatterns\Facade\SampleCode\Compiler.cs" />
+    <Compile Include="StructuralPatterns\Facade\SampleCode\IParser.cs" />
+    <Compile Include="StructuralPatterns\Facade\SampleCode\IProgramNodeBuilder.cs" />
+    <Compile Include="StructuralPatterns\Facade\SampleCode\IScanner.cs" />
+    <Compile Include="StructuralPatterns\Facade\SampleCode\Parser.cs" />
+    <Compile Include="StructuralPatterns\Facade\SampleCode\ProgramNode.cs" />
+    <Compile Include="StructuralPatterns\Facade\SampleCode\ProgramNodeBuilder.cs" />
+    <Compile Include="StructuralPatterns\Facade\SampleCode\Scanner.cs" />
+    <Compile Include="StructuralPatterns\Facade\SampleCode\Token.cs" />
+    <Compile Include="StructuralPatterns\Flyweight\SampleCode\Character.cs" />
+    <Compile Include="StructuralPatterns\Flyweight\SampleCode\CharacterFactory.cs" />
+    <Compile Include="StructuralPatterns\Flyweight\SampleCode\ICharacter.cs" />
+    <Compile Include="StructuralPatterns\Flyweight\SampleCode\Line.cs" />
+    <Compile Include="StructuralPatterns\Flyweight\Structure\ConcreteFlyweight.cs" />
+    <Compile Include="StructuralPatterns\Flyweight\Structure\FlyweightFactory.cs" />
+    <Compile Include="StructuralPatterns\Flyweight\Structure\IFlyweight.cs" />
+    <Compile Include="StructuralPatterns\Flyweight\Structure\UnsharedConcreteFlyweight.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BehavioralPatterns\ChainOfResponsibility\Structure\ClassDiagram.cd" />
+    <None Include="BehavioralPatterns\Observer\SampleCode\ClassDiagram.cd" />
+    <None Include="BehavioralPatterns\Strategy\Structure\ClassDiagram.cd" />
+    <None Include="BehavioralPatterns\TemplateMethod\Structure\ClassDiagram.cd" />
+    <None Include="CreationalPatterns\AbstractFactory\Structure\ClassDiagram.cd" />
+    <None Include="StructuralPatterns\Composite\Structure\ClassDiagram.cd" />
+    <None Include="StructuralPatterns\Flyweight\Structure\ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CreationalPatterns\AbstractFactory\SampleCode\" />
+    <Folder Include="CreationalPatterns\FactoryMethod\Structure\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

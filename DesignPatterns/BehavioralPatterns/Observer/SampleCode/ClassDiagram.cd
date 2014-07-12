@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DesignPatterns.BehavioralPatterns.Observer.SampleCode.AnalogDisplayer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BehavioralPatterns\Observer\SampleCode\AnalogDisplayer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPatterns.BehavioralPatterns.Observer.SampleCode.AnalogClock" Collapsed="true">
+    <Position X="3" Y="3" Width="1.5" />
+    <InheritanceLine Type="DesignPatterns.BehavioralPatterns.Observer.SampleCode.ClockBase" ManuallyRouted="true">
+      <Path>
+        <Point X="4.75" Y="2.18" />
+        <Point X="4.75" Y="2.623" />
+        <Point X="3.75" Y="2.623" />
+        <Point X="3.75" Y="3" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BehavioralPatterns\Observer\SampleCode\AnalogClock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.BehavioralPatterns.Observer.SampleCode.ClockBase">
+    <Position X="4" Y="0.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAgAAAAAAAAAEAAAAAAAAAAIAAAAAAAAQA=</HashCode>
+      <FileName>BehavioralPatterns\Observer\SampleCode\ClockBase.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_clockTimer" />
+      <Field Name="_timeDisplayer" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPatterns.BehavioralPatterns.Observer.SampleCode.ClockTimer">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>BehavioralPatterns\Observer\SampleCode\ClockTimer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_time" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DesignPatterns.BehavioralPatterns.Observer.SampleCode.DigitalClock" Collapsed="true">
+    <Position X="5.25" Y="3" Width="1.5" />
+    <InheritanceLine Type="DesignPatterns.BehavioralPatterns.Observer.SampleCode.ClockBase" ManuallyRouted="true">
+      <Path>
+        <Point X="4.75" Y="2.18" />
+        <Point X="4.75" Y="2.644" />
+        <Point X="6" Y="2.644" />
+        <Point X="6" Y="3" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BehavioralPatterns\Observer\SampleCode\DigitalClock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.BehavioralPatterns.Observer.SampleCode.DigitalDisplayer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BehavioralPatterns\Observer\SampleCode\DigitalDisplayer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Bottom" Position="0.2" />
+  </Class>
+  <Class Name="DesignPatterns.BehavioralPatterns.Observer.SampleCode.Subject" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAIAAAABAAAAAAAQAAAA=</HashCode>
+      <FileName>BehavioralPatterns\Observer\SampleCode\Subject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.BehavioralPatterns.Observer.SampleCode.Time" Collapsed="true">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAIAAAAAACIAAAAAAAAAAAA=</HashCode>
+      <FileName>BehavioralPatterns\Observer\SampleCode\Time.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="DesignPatterns.BehavioralPatterns.Observer.SampleCode.IObserver">
+    <Position X="7.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BehavioralPatterns\Observer\SampleCode\IObserver.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DesignPatterns.BehavioralPatterns.Observer.SampleCode.ITimeDisplayer">
+    <Position X="7.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BehavioralPatterns\Observer\SampleCode\ITimeDisplayer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
